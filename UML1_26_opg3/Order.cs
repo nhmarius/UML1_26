@@ -22,7 +22,7 @@
             double totalPrice = 0;
             foreach (OrderLine orderLine in OrderLineList)
             {
-                totalPrice += orderLine.Pizza.Price * orderLine.Amount;
+                totalPrice += orderLine.Pizza.Price+orderLine.ToppingPrice() * orderLine.Amount;
             }
 
             //skal moms på før man tilføjer leveringsomkostninger? undersøg
