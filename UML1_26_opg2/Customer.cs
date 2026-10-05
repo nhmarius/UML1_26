@@ -10,7 +10,7 @@
         {
             Name = name;
             Address = address;
-            Id = NextId++;
+            Id = ++NextId;
         }
 
         public override string ToString()
