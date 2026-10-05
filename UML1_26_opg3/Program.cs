@@ -1,4 +1,4 @@
-﻿
+﻿Console.WriteLine("opgave 3\n");
 
 Customer customer1 = new("marius", "street 123");
 Customer customer2 = new("mikkel", "somewhere 66");
@@ -22,8 +22,8 @@ Console.WriteLine(pizza3.ToString());
 Console.WriteLine();
 Console.WriteLine();
 
-OrderLine orderLine1 = new(pizza1, "no cheese");
-OrderLine orderLine2 = new(pizza3, "");
+OrderLine orderLine1 = new(pizza1, 5, "no cheese");
+OrderLine orderLine2 = new(pizza3, 1, "");
 List<OrderLine> orderLineList1 = new List<OrderLine> { orderLine1, orderLine2 };
 Order order1 = new(orderLineList1, customer1, true);
 

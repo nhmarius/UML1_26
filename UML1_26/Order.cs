@@ -13,7 +13,7 @@
         Customer = customer;
         IsDelivery = isDelivery;
 
-        OrderId = NextId++;
+        OrderId = ++NextId;
     }
     public double CalulatePrice()
     {

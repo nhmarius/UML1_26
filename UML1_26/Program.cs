@@ -1,4 +1,6 @@
-﻿Customer customer1 = new("marius", "street 123");
+﻿Console.WriteLine("opgave 1\n");
+
+Customer customer1 = new("marius", "street 123");
 Customer customer2 = new("mikkel", "somewhere 66");
 Customer customer3 = new("aksel", "placename 17");
 
