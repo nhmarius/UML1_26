@@ -46,8 +46,20 @@ public class OrderLine
         }
         return total;
     }
+    public string ToppingPrint() 
+    {
+        string returnValue = "";
+        foreach (Topping topping in ToppingList) returnValue += topping.Name + ", ";
+        return returnValue;
+    }
+        
     public override string ToString()
     {
+        if (ToppingList.Count>0)
+        {
+            return $"amount: {Amount}, {Pizza.ToString()}, \nextra toppings: {ToppingPrint()}comment: {Comment}";
+        }
         return $"amount: {Amount}, {Pizza.ToString()}, comment: {Comment}";
+
     }
 }
